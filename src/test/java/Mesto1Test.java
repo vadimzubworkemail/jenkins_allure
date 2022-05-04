@@ -24,7 +24,7 @@ public class Mesto1Test {
         given()
                 .header("Content-type", "application/json") // Передаём Content-type в заголовке для указания типа файла
                 .auth().oauth2(bearerToken) // Передаём токен для аутентификации
-                .body("{\"name\":\"Москва\",\"link\":\"https://code.s3.yandex.net/qa-automation-engineer/java/files/paid-track/sprint1/photoSelenium.jpg\"}") // Формируем тело запроса
+                .body("{\"na\":\"Москва\",\"link\":\"https://code.s3.yandex.net/qa-automation-engineer/java/files/paid-track/sprint1/photoSelenium.jpg\"}") // Формируем тело запроса
                 .post("/api/cards") // Делаем POST-запрос
                 .then().statusCode(201); // Проверяем код ответа
     }
